@@ -6,7 +6,8 @@ Make sure you have C++ installed on your computer, as well as the graphics libra
 ```sh
 make
 ```
-### How run the project
+### How run the project  
+you must launch the executable with the desired graphics lib: SFML or SDL2
 ```sh
-./arcade
+./arcade ./lib/arcade_ + name of graphics library + .so
 ```
