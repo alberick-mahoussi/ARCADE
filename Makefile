@@ -20,7 +20,7 @@ CXXFLAGS = -Wall -Wextra -I include/ -ldl
 ## Lib NCurses
 NAME_NCURSE = lib/arcade_ncurses.so
 
-SRC_NCURSE = src/lib/ncurse.cpp
+SRC_NCURSE = src/lib/lib_ncurse.cpp
 
 OBJ_NCURSE = $(SRC_NCURSE:.cpp=.o)
 
@@ -29,7 +29,7 @@ LDFLAGS_NCURSE = -shared -fPIC
 ## Lib SFML
 NAME_SFML = lib/arcade_sfml.so
 
-SRC_SFML = src/lib/sfml.cpp
+SRC_SFML = src/lib/lib_sfml.cpp
 
 OBJ_SFML = $(SRC_SFML:.cpp=.o)
 
@@ -38,7 +38,7 @@ LDFLAGS_SFML = -shared -fPIC -lsfml-graphics -lsfml-system -lsfml-window -lsfml-
 ## Lib SDL
 NAME_SDL = lib/arcade_sdl2.so
 
-SRC_SDL = src/lib/sdl.cpp
+SRC_SDL = src/lib/lib_sdl.cpp
 
 OBJ_SDL = $(SRC_SDL:.cpp=.o)
 
